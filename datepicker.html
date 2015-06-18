@@ -12,37 +12,43 @@
 		<script src="bootstrap-3.3.4-dist/js/bootstrap.min.js"></script>	
 		<script src="bower_components/bootstrap-datepicker-master/js/bootstrap-datepicker.js"></script>	
 		
+		<style>
+  		body{
+    		margin-top: 00px;
+  		}
+  		h1{
+    		margin-bottom: 40px;
+  		}
+    </style>
+
+		<script>
+			$(document).ready(function(){
+				$('input.date').datepicker({
+				});
+			});
+		</script>
 		
 		<title> 
 			Date Picker
 		</title>
 	
-	</head>
-	
+	</head>	
 	<body>
-		<p> Date Picker
-		</p>
-
-		<!-- eternicode components-->
-		<div class="input-group date">
-  			<input type="text" class="form-control"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
-
-		</div> 
-		
+    <div class="container">		
+    		<h1>Date Picker</h1>
+    		
+        <form>
+          <div class="form-group">
+            <label class="sr-only" for="exampleInputAmount">Date</label>
+            <div class="input-group">
+              <input type="date" class="form-control date" id="exampleInputAmount">
+              <div class="input-group-addon"><i class="glyphicon glyphicon-th"></i></div>
+            </div>
+          </div>
+        </form>		
+    		
+    </div><!-- container -->		
 	</body>	
 	
-
-		<script>
-			$(document).ready(function(){
-				//This should implement the calendar with an icon
-				$('#sandbox-container input').datepicker({
-				});
-
-				//The below code is ultimately what we want to implement
-				/*$('#sandbox-container .input-group.date').datepicker({
-    				autoclose: true,
-    				todayHighlight: true
-				}); */
-			});
-		</script>
+		
 </html>
