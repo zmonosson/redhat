@@ -1,1 +1,0 @@
-This is my folder for all Red Hat related coding
