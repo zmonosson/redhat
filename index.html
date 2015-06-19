@@ -16,13 +16,30 @@
 		
     <!-- spacing for the title and buttons -->
 		<style>
-  		h1{
-    		margin: 150px 0 40px 0;
-  		}
+      h1{
+        margin: 150px 0 40px 0;
+      }
+
+      img{
+        position: absolute;
+      }
+
+      body{
+        background-color: #ededed;
+      }
     </style>
 
     <style>
-      a{
+      .navbar-brand{
+        padding-top: 0px;
+        padding-left: 0px;
+        height: 60px;
+      }
+      
+    </style>
+
+    <style>
+      .btn {
         margin-top: 20px;
       }
       </style>
@@ -44,6 +61,14 @@
 	</head>	
 	
   <body>
+    <!-- brand header-->
+    <div class="navbar-header"> 
+      <a href="#" class="pull-left">
+        <img src="rectangle.png" style="width:100%; height:70px">
+        <img src="patternfly.png" style="max-width:70px; max-height:70px">
+      </a>
+    </div>
+    
     <div class="container">	
       <div class="row">
         <div class="col-md-offset-3 col-md-6">
