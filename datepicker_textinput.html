@@ -7,27 +7,20 @@
     <!-- bootstrap, eternicode and jquery-->
 		<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">	
 		<link rel="stylesheet" href="bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker3.min.css">	
-  	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>	
 		<script src="bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>	
 
-     <!-- font awesome css for icons -->
+    <!-- font awesome css for icons -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 		
-    <!-- spacing for the title and buttons -->
 		<style>
   		h1{
     		margin: 150px 0 40px 0;
   		}
     </style>
 
-    <style>
-      a{
-        margin-top: 20px;
-      }
-      </style>
-
-    <!-- datepicker jquery-->  
+    <!-- datepicker jquery-->
 		<script>
 			$(document).ready(function(){
 				$('input.date').datepicker({
@@ -41,34 +34,40 @@
 		<title> 
 			Date Picker Prototype
 		</title>
-	</head>	
 	
-  <body>
+	</head>	
+	<body>
     <div class="container">	
+      
       <div class="row">
+        
         <div class="col-md-offset-3 col-md-6">
         	
     		<h1>Date Picker</h1>
     		
         <form>
           <div class="form-group">
-            <label class="" for="exampleInputAmount">Task 1: Please set the date to June 30, 2015</label>
+            <label class="" for="exampleInputAmount">
+              Task 4: Please select Feb 1, 2016 by typing it into the input field
+            </label>
             <div class="input-group">
               <input type="text" class="form-control date" id="exampleInputAmount">
-              <div class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i>
-              </div>
+              <div class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></div>
             </div>
-            <p class="text-right">
-              <a class="btn btn-default" href="datepicker.html" role="button">Wait for Next Task</a>
-            </p>
           </div>
+            
+          <div class="form-group">  
+            <p class="text-right">
+              <a class="btn btn-default" href="datepicker_today.html" role="button">Back</a>
+              <a class="btn btn-default" href="datepicker_icons.html" role="button">Next Task</a>
+            </p>
+          </div>  
         </form>		
     		
-    		</div>
+    	  </div>
     	</div>
-    </div><!-- container -->		
+    </div> <!-- countainer -->	
 	</body>		
 </html>
-
 
 
