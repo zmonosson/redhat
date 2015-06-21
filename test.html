@@ -26,10 +26,6 @@
       body{
         background-color: #ededed;
       }
-
-      p{
-        padding-right: 95px;
-      }
     </style>
 
     <style>
@@ -44,7 +40,7 @@
     <!-- datepicker jquery-->
 		<script>
 			$(document).ready(function(){
-				$('.input-group.date').datepicker({
+				$('input.date').datepicker({
           autoclose: true,
   				orientation: "top auto",
   				todayHighlight: true
@@ -75,66 +71,7 @@
         	
     		<h1>Date Picker</h1>
     		
-
-        <form class="form-horizontal">
-  
-  <div class="form-group">
-    <label class="inputEmail3" for="exampleInputAmount" style="padding-left:15px">Which of these icons are acceptable for a datepicker?</label>
-    <br>
-    <label for="inputEmail3" class="control-label"> A </label>
-    <div class="col-sm-10">
-      <div class="input-group date">
-        <input type="text" class="form-control date" id="exampleInputAmount">
-        <div class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="form-group">
-    <label for="inputPassword3" class="control-label"> B</label>
-    <div class="col-sm-10">
-      <div class="input-group date">
-        <input type="text" class="form-control date" id="exampleInputAmount">
-        <div class="input-group-addon"><i class="fa fa-calendar"></i>
-        </div>
-      </div>
-    </div>
-  </div>
-
-   <div class="form-group">
-    <label for="inputPassword3" class="control-label">C</label>
-    <div class="col-sm-10">
-      <div class="input-group date">
-         <input type="text" class="form-control date" id="exampleInputAmount">
-         <div class="input-group-addon"><i class="fa fa-calendar-o"></i>
-        </div>
-      </div>
-    </div>
-  </div>
- 
-<div class="form-group">
-    <label for="inputPassword3" class="control-label">D</label>
-    <div class="col-sm-10">
-      <div class="input-group date">
-         <input type="text" class="form-control date" id="exampleInputAmount">
-         <div class="input-group-addon"><i class="glyphicon glyphicon-th"></i>
-        </div>
-      </div>
-    </div>
-  </div>
- 
- <div class="form-group">  
-  <div class="col-sm-12">
-            <p class="text-right">
-              <a class="btn btn-default" href="datepicker_today.html" role="button">Back</a>
-              <a class="btn btn-default" href="index.html" role="button">Jump to the Beginning</a>
-            </p>
-          </div>  
-        </div>
-  </div> 
-</form>
-       <!-- <form class="form-horizontal">
+        <!-- <form class="form-horizontal">
           <ol>
           <div class="form-group">
             <label class="" for="exampleInputAmount">Which of these icons are acceptable for a datepicker?</label>
@@ -185,9 +122,59 @@
             </p>
           </div>  
         </div>
-      </ol> 
+      </ol>
+        </form>		-->
 
-        </form>	-->	
+<form class="form-horizontal">
+  
+  <div class="form-group">
+    <label for="inputEmail3" class="control-label">A</label>
+    <div class="col-sm-10">
+      <div class="input-group">
+        <input type="text" class="form-control date" id="exampleInputAmount">
+        <div class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="inputPassword3" class="control-label">B</label>
+    <div class="col-sm-10">
+      <div class="input-group">
+        <input type="text" class="form-control date" id="exampleInputAmount">
+        <div class="input-group-addon"><i class="fa fa-calendar"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <div class="form-group">
+    <label for="inputPassword3" class="control-label">C</label>
+    <div class="col-sm-10">
+      <div class="input-group">
+         <input type="text" class="form-control date" id="exampleInputAmount">
+         <div class="input-group-addon"><i class="fa fa-calendar-o"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+<div class="form-group">
+    <label for="inputPassword3" class="control-label">D</label>
+    <div class="col-sm-10">
+      <div class="input-group">
+         <input type="text" class="form-control date" id="exampleInputAmount">
+         <div class="input-group-addon"><i class="glyphicon glyphicon-th"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div> 
+</form>
+
+
     		</div>
     	</div>	
     </div><!-- container -->		

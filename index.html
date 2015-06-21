@@ -10,7 +10,7 @@
   	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>	
 		<script src="bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>	
-
+    <script src="bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script> 
      <!-- font awesome css for icons -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 		
@@ -47,7 +47,7 @@
     <!-- datepicker jquery-->  
 		<script>
 			$(document).ready(function(){
-				$('input.date').datepicker({
+				$('.input-group.date').datepicker({
           autoclose: true,
   				orientation: "top auto",
   				todayHighlight: true
@@ -77,14 +77,13 @@
     		
         <form>
           <div class="form-group">
-            <label class="" for="exampleInputAmount">Task 1: Please set the date to June 30, 2015</label>
-            <div class="input-group">
+            <label class="" for="exampleInputAmount">Task 1: Please set the date to June 30, 2015 </label>
+            <div class="input-group date">
               <input type="text" class="form-control date" id="exampleInputAmount">
-              <div class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i>
-              </div>
+              <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
             </div>
             <p class="text-right">
-              <a class="btn btn-default" href="datepicker.html" role="button">Wait for Next Task</a>
+              <a class="btn btn-default" href="datepicker.html" role="button">Wait for Followup</a>
             </p>
           </div>
         </form>		

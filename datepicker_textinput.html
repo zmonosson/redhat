@@ -40,7 +40,7 @@
     <!-- datepicker jquery-->
 		<script>
 			$(document).ready(function(){
-				$('input.date').datepicker({
+				$('.input-group.date').datepicker({
           autoclose: true,
   				orientation: "top auto",
   				todayHighlight: true
@@ -75,7 +75,7 @@
             <label class="" for="exampleInputAmount">
               Task 4: Please select Feb 1, 2016 by typing it into the input field
             </label>
-            <div class="input-group">
+            <div class="input-group date">
               <input type="text" class="form-control date" id="exampleInputAmount">
               <div class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></div>
             </div>
@@ -84,7 +84,7 @@
           <div class="form-group">  
             <p class="text-right">
               <a class="btn btn-default" href="datepicker_today.html" role="button">Back</a>
-              <a class="btn btn-default" href="datepicker_icons.html" role="button">Next Task</a>
+              <a class="btn btn-default" href="datepicker_icons.html" role="button">Wait for Followup</a>
             </p>
           </div>  
         </form>		

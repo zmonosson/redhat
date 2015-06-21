@@ -34,13 +34,13 @@
         padding-left: 0px;
         height: 60px;
       }
-      
+
     </style>
 
     <!-- datepicker jquery-->
 		<script>
 			$(document).ready(function(){
-				$('input.date').datepicker({
+				$('.input-group.date').datepicker({
           autoclose: true,
           todayBtn: "linked",
   				orientation: "top auto",
@@ -73,9 +73,9 @@
         <form>
           <div class="form-group">
             <label class="" for="exampleInputAmount">
-              Task 3: Explore the "Today" button
+              Task 3: Open the datepicker and try out the today button
             </label>
-            <div class="input-group">
+            <div class="input-group date">
               <input type="text" class="form-control date" id="exampleInputAmount">
               <div class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></div>
             </div>
@@ -84,7 +84,7 @@
            <div class="form-group">  
             <p class="text-right">
               <a class="btn btn-default" href="datepicker.html" role="button">Back</a>
-              <a class="btn btn-default" href="datepicker_textinput.html" role="button">Next Task</a>
+              <a class="btn btn-default" href="datepicker_textinput.html" role="button">Wait for Followup</a>
             </p>
           </div>  
         </form>		
