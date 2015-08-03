@@ -11,7 +11,7 @@
 		<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>	
 		<script src="bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>	
 
-     <!-- font awesome css for icons -->
+    <!-- font awesome css for icons -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 		
 		<style>
@@ -26,6 +26,10 @@
       body{
         background-color: #ededed;
       }
+
+      p{
+        padding-right: 95px;
+      }
     </style>
 
     <style>
@@ -35,6 +39,7 @@
         height: 60px;
       }
 
+
     </style>
 
     <!-- datepicker jquery-->
@@ -42,7 +47,6 @@
 			$(document).ready(function(){
 				$('.input-group.date').datepicker({
           autoclose: true,
-          todayBtn: "linked",
   				orientation: "top auto",
   				todayHighlight: true
 				});
@@ -56,40 +60,43 @@
 	</head>	
 	<body>
 
-    <!-- brand header-->
+  <!-- brand header-->
     <div class="navbar-header"> 
       <a href="#" class="pull-left">
-        <img src="banner_images/rectangle.png" style="width:100%; height:70px">
-        <img src="banner_images/patternfly.png" style="max-width:70px; max-height:70px">
+        <img src="rectangle.png" style="width:100%; height:70px">
+        <img src="patternfly.png" style="max-width:70px; max-height:70px">
       </a>
+      <h2> Patternfly </h2>
     </div>
 
-    <div class="container">	
+    <!-- calendars-->
+    <div class="container">	   
       <div class="row">
         <div class="col-md-offset-3 col-md-6">
         	
-    		<h1>Date Picker</h1>
+    		  <h1>Date Picker</h1>
     		
-        <form>
-          <div class="form-group">
-            <label class="" for="exampleInputAmount">
-              Task 3: Open the datepicker and try out the today button
-            </label>
-            <div class="input-group date">
-              <input type="text" class="form-control date" id="exampleInputAmount">
-              <div class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></div>
+          <form class="form-horizontal">
+            
+
+            <div class="form-group">
+              <label for="inputPassword3" class="control-label"> B</label>
+              <div class="col-sm-10">
+                <div class="input-group date">
+                  <input type="text" class="form-control date" id="exampleInputAmount">
+                  <div class="input-group-addon"><i class="fa fa-calendar"></i>
+                </div>
+              </div>
             </div>
           </div>
-
-           <div class="form-group">  
-            <p class="text-right">
-              <a class="btn btn-default" href="datepicker.html" role="button">Back</a>
-              <a class="btn btn-default" href="datepicker_textinput.html" role="button">Next Task</a>
-            </p>
-          </div>  
-        </form>		
-    		</div>
-    	</div>	
-    </div><!-- container -->		
-	</body>			
+ 
+       
+        </form>
+      </div>
+    </div>	
+  </div><!-- container -->		
+  </body>		
 </html>
+
+
+
